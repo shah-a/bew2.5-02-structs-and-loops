@@ -65,8 +65,8 @@ func main() {
 		fmt.Println() // For terminal spacing
 	}
 
-	for i := 0; i < len(houses); i++ {
-		fmt.Printf("%s\t\t%s\t\t%d Rooms\t\t$%.2f\n", houses[i].address, houses[i].city, houses[i].numRooms, houses[i].price)
+	for _, house := range houses {
+		fmt.Printf("%s\t\t%s\t\t%d Rooms\t\t$%.2f\n", house.address, house.city, house.numRooms, house.price)
 	}
 }
 
